@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Performance | F1 Analytics Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Titillium Web (Similar a la de F1) -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Titillium Web', sans-serif; }
+        .f1-red { color: #e10600; }
+        .f1-bg-red { background-color: #e10600; }
+        .f1-dark { background-color: #15151e; }
+        .f1-border { border-top: 4px solid #e10600; border-right: 4px solid #e10600; border-radius: 0 15px 0 0; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="f1-dark text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="f1-bg-red w-8 h-8 flex items-center justify-center font-black italic">F1</div>
+                <h1 class="text-xl font-bold uppercase tracking-tighter">Data <span class="f1-red">Assessment</span></h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-sm uppercase font-bold tracking-widest">
+                    <li class="hover:text-red-600 transition duration-300 cursor-pointer border-b-2 border-transparent hover:border-red-600">Overview</li>
+                    <li class="hover:text-red-600 transition duration-300 cursor-pointer border-b-2 border-transparent hover:border-red-600">Products</li>
+                    <li class="hover:text-red-600 transition duration-300 cursor-pointer border-b-2 border-transparent hover:border-red-600">Insights</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main class="container mx-auto mt-8 px-4">
+        <section class="f1-dark text-white p-10 mb-10 f1-border relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-5xl font-black italic uppercase mb-2">Performance Report</h2>
+                <p class="text-xl font-light text-gray-400">Sales Analytics Dashboard & Execution Strategy 2025</p>
+                <div class="mt-6 flex items-center space-x-4 text-xs font-bold uppercase tracking-widest">
+                    <span class="bg-red-600 px-3 py-1">Live Results</span>
+                    <span class="border border-white px-3 py-1 italic">Circuit: Global Sales Data</span>
+                </div>
+            </div>
+            <!-- Decoración estilo F1 -->
+            <div class="absolute right-0 bottom-0 opacity-10 text-8xl font-black italic">RACE DATA</div>
+        </section>
+
+        <!-- Aquí irán los KPIs en el siguiente paso -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="f1-dark text-white text-center p-8 mt-12 border-t-4 border-red-600">
+        <p class="text-xs uppercase tracking-widest">&copy; 2026 Data Analyst Assessment | Inspired by Formula 1 Analytics</p>
+    </footer>
+
+</body>
+</html>

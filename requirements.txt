@@ -1,0 +1,18 @@
+# Manipulación y Análisis de Datos
+pandas
+numpy
+
+# Visualización (Para el EDA)
+matplotlib
+seaborn
+
+# Conexión a Base de Datos y SQL
+sqlalchemy
+psycopg2-binary    # Cambiar por 'pymysql' si usas MySQL o 'sqlite3' es nativo
+python-dotenv      # Para leer el archivo .env
+
+# Integración Web (Sencilla y profesional)
+streamlit
+
+# Jupyter Notebook support
+ipykernel

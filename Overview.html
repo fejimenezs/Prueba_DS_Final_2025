@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Sales Analytics | Executive Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Titillium Web', sans-serif; }
+        .f1-red { color: #e10600; }
+        .f1-bg-red { background-color: #e10600; }
+        .f1-dark { background-color: #15151e; }
+        .f1-card-border { border-top: 4px solid #e10600; border-right: 4px solid #e10600; border-radius: 0 15px 0 0; }
+        .f1-gradient { background: linear-gradient(135deg, #15151e 0%, #38383f 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- HEADER -->
+    <header class="f1-dark text-white p-4 sticky top-0 z-50 shadow-2xl border-b-2 border-red-600">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="f1-bg-red w-10 h-6 flex items-center justify-center font-black italic rounded-sm text-sm">F1</div>
+                <h1 class="text-2xl font-black uppercase tracking-tighter">SALES <span class="f1-red">INTELLIGENCE</span></h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8 text-xs uppercase font-bold tracking-widest">
+                    <li class="hover:text-red-500 transition cursor-pointer">Live Dashboard</li>
+                    <li class="hover:text-red-500 transition cursor-pointer">SQL Reports</li>
+                    <li class="hover:text-red-500 transition cursor-pointer">Insights</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- HERO / TITLE SECTION -->
+        <section class="mb-12">
+            <h2 class="text-5xl font-black italic uppercase text-slate-900 mb-2 border-l-8 border-red-600 pl-4">
+                Global Performance Center
+            </h2>
+            <p class="text-gray-500 font-bold uppercase tracking-widest text-sm">Season 2025-2026 | Execution Strategy</p>
+        </section>
+
+        <!-- KPI GRID (FLEXBOX / GRID) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <!-- Total Sales -->
+            <div class="bg-white p-6 shadow-lg f1-card-border hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <p class="text-gray-400 font-bold uppercase text-xs mb-1">Total Gross Revenue</p>
+                <h3 class="text-4xl font-black italic text-slate-800">$3.13M</h3>
+                <div class="w-full bg-gray-100 h-1 mt-4">
+                    <div class="f1-bg-red h-1 w-full"></div>
+                </div>
+            </div>
+            <!-- Average Ticket -->
+            <div class="bg-white p-6 shadow-lg f1-card-border hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <p class="text-gray-400 font-bold uppercase text-xs mb-1">Average Ticket Size</p>
+                <h3 class="text-4xl font-black italic text-slate-800">$18.97K</h3>
+                <div class="w-full bg-gray-100 h-1 mt-4">
+                    <div class="f1-bg-red h-1 w-3/4"></div>
+                </div>
+            </div>
+            <!-- YoY Growth -->
+            <div class="bg-white p-6 shadow-lg f1-card-border hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <p class="text-gray-400 font-bold uppercase text-xs mb-1">YoY Growth Momentum</p>
+                <h3 class="text-4xl font-black italic text-slate-800">0.00%</h3>
+                <div class="w-full bg-gray-100 h-1 mt-4">
+                    <div class="bg-blue-500 h-1 w-1/4"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATA SECTION: TOP PRODUCTS & DASHBOARD -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
+            
+            <!-- SQL TOP 5 PRODUCTS TABLE -->
+            <section class="bg-white p-8 shadow-xl rounded-sm">
+                <h3 class="text-2xl font-black uppercase italic mb-6 border-b-2 border-gray-100 pb-2">
+                    <span class="f1-red">Starting Grid:</span> Top 5 Products
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="f1-dark text-white uppercase text-xs tracking-widest">
+                                <th class="p-3">Rank</th>
+                                <th class="p-3">Product Name</th>
+                                <th class="p-3 text-right">Revenue Share</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm font-bold">
+                            <tr class="border-b hover:bg-red-50 transition">
+                                <td class="p-4 f1-red font-black">01</td>
+                                <td class="p-4 uppercase">Gaseosa</td>
+                                <td class="p-4 text-right">$1,050,000</td>
+                            </tr>
+                            <tr class="border-b hover:bg-red-50 transition">
+                                <td class="p-4 f1-red font-black">02</td>
+                                <td class="p-4 uppercase">Cafe</td>
+                                <td class="p-4 text-right">$740,000</td>
+                            </tr>
+                            <tr class="border-b hover:bg-red-50 transition">
+                                <td class="p-4 f1-red font-black">03</td>
+                                <td class="p-4 uppercase">Pan</td>
+                                <td class="p-4 text-right">$520,000</td>
+                            </tr>
+                            <tr class="border-b hover:bg-red-50 transition">
+                                <td class="p-4 f1-red font-black">04</td>
+                                <td class="p-4 uppercase">Chocolate</td>
+                                <td class="p-4 text-right">$410,000</td>
+                            </tr>
+                            <tr class="border-b hover:bg-red-50 transition">
+                                <td class="p-4 f1-red font-black">05</td>
+                                <td class="p-4 uppercase">Leche</td>
+                                <td class="p-4 text-right">$310,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- MULTIMEDIA: DASHBOARD IMAGE -->
+            <section class="bg-white p-4 shadow-xl flex flex-col justify-center items-center">
+                <h3 class="text-xl font-black uppercase italic self-start mb-4">Dashboard <span class="f1-red">Live Stream</span></h3>
+                <img src="dashboard.png" alt="Power BI Sales Dashboard" class="rounded shadow-md border border-gray-200 w-full hover:scale-105 transition duration-500">
+                <p class="mt-4 text-xs text-gray-400 italic">Snapshot: Real-time SQL database integration via Power BI.</p>
+            </section>
+        </div>
+
+        <!-- INSIGHTS SECTION -->
+        <section class="f1-gradient text-white p-10 rounded-br-3xl shadow-2xl">
+            <h3 class="text-3xl font-black italic uppercase mb-8 border-l-4 border-red-600 pl-4">Strategic Insights</h3>
+            <ul class="space-y-6">
+                <li class="flex items-start space-x-4">
+                    <span class="f1-bg-red text-white font-bold px-2 py-1 text-xs">01</span>
+                    <div>
+                        <h4 class="font-bold text-red-500 uppercase tracking-tight">Product Concentration Risk</h4>
+                        <p class="text-gray-300 text-sm">Top 3 products generate 45% of total revenue. Any disruption in Gaseosa or Cafe supply chains could reduce cash flow by nearly half.</p>
+                    </div>
+                </li>
+                <li class="flex items-start space-x-4">
+                    <span class="f1-bg-red text-white font-bold px-2 py-1 text-xs">02</span>
+                    <div>
+                        <h4 class="font-bold text-red-500 uppercase tracking-tight">Premium Segment Upsell</h4>
+                        <p class="text-gray-300 text-sm">Premium customers spend 2.8x more per transaction. A personalized loyalty campaign for 'Standard' users is recommended to boost LTV.</p>
+                    </div>
+                </li>
+                <li class="flex items-start space-x-4">
+                    <span class="f1-bg-red text-white font-bold px-2 py-1 text-xs">03</span>
+                    <div>
+                        <h4 class="font-bold text-red-500 uppercase tracking-tight">Regional Expansion Pilot</h4>
+                        <p class="text-gray-300 text-sm">Sales are concentrated in 2 countries. Cold spot regions with high population density are identified for the 2026 expansion pilot.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="f1-dark text-white p-12 mt-20 border-t-8 border-red-600">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h5 class="text-xl font-black italic uppercase">Project Assessment</h5>
+                <p class="text-gray-400 text-sm">End-to-End Analytics Pipeline: Python, SQL, Power BI, and Web Integration.</p>
+            </div>
+            <div class="text-right md:text-right">
+                <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Author</p>
+                <p class="text-lg font-bold">Fausto Jimenez Suarez</p>
+                <p class="text-red-500 text-sm italic font-bold">Google IA Studio Partner</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
