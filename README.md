@@ -5,7 +5,7 @@
  **This project demonstrates an end-to-end data analytics workflow, acting as a** **Junior Data Analyst**. The objective was to transform raw, messy sales data into actionable business intelligence using a professional modular approach. The project covers data cleaning (Python), relational modeling (Star Schema), database migration (SQL), and advanced visualization (Power BI).
 
 
-
+```bash
 data-analyst-assessment/
 ├── data/
 │   ├── raw/                # Original messy 'Datos.csv'
@@ -20,7 +20,7 @@ data-analyst-assessment/
 ├── .env                           # Database credentials (hidden)
 ├── requirements.txt               # Dependencies
 └── README.md                      # Project Documentation
-
+```
 
 
 
